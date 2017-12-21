@@ -1,5 +1,5 @@
 % !TeX encoding = UTF-8
-% !TeX spellcheck = fr-classique
+% !TeX spellcheck = en_GB
 \documentclass[a4paper, 11pt, extrafontsizes, onecolumn, openright]{memoir}
 
 %%% PACKAGES 
@@ -30,8 +30,8 @@
 %%%-------------------------------------------------------------------------------
 
 \author{Eric Marcon}
-\title{Mesures \\ de la Biodiversité}
-\date{23 octobre 2017}
+\title{The Measurement of Biodiversity}
+\date{21 December 2017}
 
 
 %%%------------------------------------------------------------------------------
@@ -52,22 +52,22 @@ par(mar=c(0,0,0,0))
 @
 
 
-\selectlanguage{french}
-\sisetup{locale = FR}
+\selectlanguage{english}
+\sisetup{locale = EN}
 
 %%%------------------------------------------------------------------------------
 \frontmatter
 
 % Main title Page
 \MainTitlePage[
-Je remercie François Morneau pour sa relecture attentive de la première version de ce document et sa contribution décisive pour la bonne utilisation de R dans les exemples.
+I thank François Morneau for his careful proof reading of the first version of this docuemnt and his decisive contribution to the optimal use of R code in examples.
 
-Bruno Hérault et Chris Baraloto ont contribué à la revue de la littérature de façon significative.
+Bruno Hérault and Chris Baraloto contributed significantly to the review of the literature.
 
-Ce document est réalisé de façon dynamique et reproductible grâce à:
+This document is reproducibly and dynamically made with:
 \begin{itemize}
-  \item \LaTeX, dans sa distribution Miktex (\url{http://miktex.org/}) et la classe \emph{memoir} (\url{http://www.ctan.org/pkg/memoir});
-  \item R (\url{http://www.r-project.org/}) et RStudio (\url{http://www.rstudio.com/});
+  \item \LaTeX, in its Miktex (\url{http://miktex.org/}) distibution anf the \emph{memoir} class(\url{http://www.ctan.org/pkg/memoir});
+  \item R (\url{http://www.r-project.org/}) and RStudio (\url{http://www.rstudio.com/});
   \item \emph{knitr} (\url{http://yihui.name/knitr/}).
 \end{itemize}
 
@@ -75,7 +75,9 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 \SmallMargins
 
-\shorttoc{Sommaire}{0}
+\setcounter{tocdepth}{3} % subsubsection
+\tableofcontents
+
 \clearpage
 
 <<child-Notations, child='Notations.Rnw'>>=
@@ -85,7 +87,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 \mainmatter
 
 \SmallMargins
-\part{Notions et outils}
+\part{Notions and tools}
 \label{part:Notions}
 <<child-Notions, child='Notions.Rnw'>>=
 @
@@ -94,7 +96,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 
 \SmallMargins
-\part{Diversité neutre d'une communauté}
+\part{Neutral Diversity of a Community}
 \label{part:Neutre}
 <<child-Neutre, child='Neutre.Rnw'>>=
 @
@@ -103,7 +105,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 
 \SmallMargins
-\part{Diversité fonctionnelle et phylogénétique}
+\part{Functional and Phylogenetic Diversity}
 \label{part:Phylodiversite}
 <<child-Phylodiversite, child='Phylodiversite.Rnw'>>=
 @
@@ -112,7 +114,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 
 \SmallMargins
-\part[Diversité beta et décomposition]{Diversité $\beta$ et décomposition}
+\part[Beta Diversity and Partitioning]{$\beta$ Diversity and Partitioning}
 \label{part:Beta}
 <<child-Beta, child='Beta.Rnw'>>=
 @
@@ -121,7 +123,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 
 \SmallMargins
-\part{Diversité jointe, diversité structurelle}
+\part{Joint Diversity, Structural Diversity}
 \label{part:Jointe}
 <<child-Jointe, child='Jointe.Rnw'>>=
 @
@@ -130,7 +132,7 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 
 
 \SmallMargins
-\part{Diversité spatialement explicite}
+\part{Spatially Explicit Diversity}
 \label{part:Spatial}
 <<child-Spatial, child='Spatial.Rnw'>>=
 @
@@ -161,7 +163,6 @@ Ce document est réalisé de façon dynamique et reproductible grâce à:
 \printbibliography
 
 \onecolumn
-\setcounter{tocdepth}{3} % subsubsection
-\tableofcontents
+
 
 \end{document}

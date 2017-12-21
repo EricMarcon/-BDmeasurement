@@ -1,5 +1,5 @@
 % !TeX encoding = UTF-8
-% !TeX spellcheck = fr-classique
+% !TeX spellcheck = en_GB
 <<Neutre-parent, echo=FALSE, cache=FALSE>>=
 set_parent('Mesures_de_la_Biodiversite.Rnw')
 opts_chunk$set(cache=TRUE, warning=FALSE, tidy=TRUE, fig.width=8, fig.height=6, out.width='.8\\maxwidth', tidy.opts=list(blank=FALSE, width.cutoff=60), size="scriptsize")
@@ -12,8 +12,8 @@ data(Paracou618)
 @
 
 \LargeMargins
-\selectlanguage{french}
-\sisetup{locale = FR}
+\selectlanguage{english}
+\sisetup{locale = EN}
 \chapter[Mesures neutres de la diversité alpha ou gamma]{Mesures neutres de la diversité $\alpha$ ou $\gamma$}
 \label{chap:MesuresNeutres}
 
