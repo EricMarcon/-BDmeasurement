@@ -1336,7 +1336,7 @@ La présence de $r_s$ dans l'échantillon est peu étonnante si $p_s$ est grande
 En revanche, si $p_s$ est petite, la présence de $r_s$ est surprenante. 
 On définit donc une fonction d'information, $I(p_s)$, décroissante quand la probabilité augmente, de $I(0)=+\infty $ (ou éventuellement une valeur strictement positive finie) à $I(1)=0$. 
 Chaque valeur observée dans l'échantillon apporte une certaine quantité d'information, dont la somme est l'information de l'échantillon. 
-\textcite{Patil1982} appellent l'information \og rareté\fg{}.
+\textcite{Patil1982} appellent l'information ``rareté''.
 
 La quantité d'information attendue de l'expérience est\break
 $\sum^S_{s=1}{p_s I(p_s) = H(\vectorsym{p})}$. 
@@ -1486,7 +1486,7 @@ Dans la littérature économique sur les inégalités, cette propriété est con
 \xq{D}{q}{}{}{} = {\left(\sum^S_{s=1}{p^q_s}\right)}^{\frac{1}{1-q}}.
 \end{equation}
 
-Le souci de Hill était de rendre les indices de diversité intelligibles après l'article remarqué de \textcite{Hurlbert1971} intitulé \og le non-concept de diversité spécifique\fg{}. 
+Le souci de Hill était de rendre les indices de diversité intelligibles après l'article remarqué de \textcite{Hurlbert1971} intitulé ``le non-concept de diversité spécifique''. 
 Hurlbert reprochait à la littérature sur la diversité sa trop grande abstraction et son éloignement des réalités biologiques, notamment en fournissant des exemples dans lesquels l'ordre des communautés n'est pas le même selon l'indice de diversité choisi. 
 Les nombres de Hill sont le nombre d'espèces équiprobables donnant la même valeur de diversité que la distribution observée. 
 Ils sont des transformations simples des indices classiques:
@@ -1499,7 +1499,7 @@ Ils sont des transformations simples des indices classiques:
 
 Ces résultats avaient déjà été obtenus avec une autre approche par \textcite{MacArthur1965} et repris par \textcite{Adelman1969} dans la littérature économique.
 
-Les nombres de Hill sont des \og nombres effectifs\fg{} ou \og nombres équivalents{}\fg{}. 
+Les nombres de Hill sont des ``nombres effectifs'' ou ``nombres équivalents{}''. 
 Le concept a été défini rigoureusement par \textcite{Gregorius1991}, d'après \textcite{Wright1931} (qui avait le premier défini la taille effective d'une population): étant donné une variable caractéristique (ici, l'entropie) fonction seulement d'une variable numérique (ici, le nombre d'espèces) dans un cas idéal (ici, l'équiprobabilité des espèces), le nombre effectif est la valeur de la variable numérique pour laquelle la variable caractéristique est celle du jeu de données. 
 
 \textcite{Gregorius2014} montre que de nombreux autres indices de diversité sont acceptables dans le sens où ils vérifient les axiomes précédents et, de plus, que la diversité d'un assemblage de communautés est obligatoirement supérieure à la diversité moyenne de ces communautés (l'égalité n'étant possible que si les communautés sont toutes identiques). 
@@ -1656,11 +1656,11 @@ On voit immédiatement que l'entropie de Tsallis est le logarithme d'ordre $q$ d
 
 L'entropie est utile pour les calculs: la correction des biais d'estimation notamment.
 Les nombres de Hill, ou \emph{nombres équivalents d'espèces} ou \emph{nombres effectif d'espèces} permettent une appréhension plus intuitive de la notion de biodiversité \autocite{Jost2006}. 
-En raison de leurs propriétés, notamment de décomposition (voir le chapitre~\ref{Decomposition}), \textcite{Jost2007} les appelle \og vraie diversité\fg{}. 
-\textcite{Hoffmann2008} critiquent cette définition totalitaire\footnote{\textcite{Jost2009} reconnaît qu'un autre terme aurait pu être choisi (\og diversité neutre\fg{} ou \og diversité mathématique\fg{} par exemple).}
+En raison de leurs propriétés, notamment de décomposition (voir le chapitre~\ref{Decomposition}), \textcite{Jost2007} les appelle ``vraie diversité''. 
+\textcite{Hoffmann2008} critiquent cette définition totalitaire\footnote{\textcite{Jost2009} reconnaît qu'un autre terme aurait pu être choisi (``diversité neutre'' ou ``diversité mathématique'' par exemple).}
 et fournissent une revue historique plus lointaine sur les origines de ces mesures. 
 
-\textcite{Dauby2012} écrivent \og diversité au sens strict\fg{}; \textcite{Gregorius2010} \og diversité explicite\fg{}.
+\textcite{Dauby2012} écrivent ``diversité au sens strict''; \textcite{Gregorius2010} ``diversité explicite''.
 Quoi qu'il en soit, les nombres de Hill respectent le principe de réplication (voir \textcite{Chao2010}, section 3 pour une discussion et un historique): si $I$ communautés de même taille, de même niveau de diversité $D$, mais sans espèces en commun sont regroupées dans une méta-communauté, la diversité de la méta-communauté doit être $I\times D$.
 
 L'intérêt de ces approches est de fournir une définition paramétrique de la diversité, qui donne plus ou moins d'importance aux espèces rares:
@@ -1674,7 +1674,7 @@ Comme les espèces rares sont difficiles à échantillonner, le biais d'estimati
 Il est adapté à une approche d'écologue, intéressé par les interactions possibles: le nombre de combinaisons d'espèces en est une approche satisfaisante. 
 Le biais d'estimation est sensible;
   \item  $\xq{D}{2}{}{}{}$ est l'inverse de l'indice de concentration de Gini-Simpson donne moins d'importance aux espèces rares. 
-\textcite{Hill1973} l'appelle \og le nombre d'espèces très abondantes\fg{}. 
+\textcite{Hill1973} l'appelle ``le nombre d'espèces très abondantes''. 
 Il comptabilise les interactions possibles entre paires d'individus: les espèces rares interviennent dans peu de paires, et influent peu sur l'indice. 
 En conséquence, le biais d'estimation est très petit; de plus, un estimateur non biaisé existe;
   \item  $\xq{D}{\infty}{}{}{}={1}/{d}$ est l'inverse de l'indice de Berger-Parker \autocite{Berger1970} qui est la proportion de la communauté représentée par l'espèce la plus abondante: $d=\max(\vectorsym{p})$. 
@@ -1901,7 +1901,7 @@ $\hat{C}{\hat{p}}_s$ peut être remplacé par cet estimateur pour réduire le bi
 Enfin, la distribution des espèces non échantillonnées peut être ajoutée en estimant leur nombre et en choisissant une loi.
 \textcite{Chao2014c} ont utilisé l'estimateur Chao1 et une distribution géométrique.
 L'estimateur jackknife \autocite{Burnham1979} est plus versatile parce que son ordre peut être adapté aux données quand l'effort d'échantillonnage est trop faible pour que l'estimateur Chao1 soit performant \autocite{Brose2003}.
-Un simple estimateur plug-in, appelé \og estimateur révélé\fg{}, peut ensuite être appliqué à cette distribution révélée \autocite{Marcon2015a}.
+Un simple estimateur plug-in, appelé ``estimateur révélé'', peut ensuite être appliqué à cette distribution révélée \autocite{Marcon2015a}.
 
 L'estimateur du taux de couverture généralisé ne fait aucune hypothèse sur les espèces non observées, et n'utilise que le taux de couverture et la technique de Horvitz-Thompson pour estimer leur contribution.
 L'estimateur révélé ne tente aucune correction mais utilise l'estimation la meilleure possible pour la distribution des probabilités.
@@ -2282,7 +2282,7 @@ La mesure normalisée est appelée \foreignlanguage{english}{\emph{case-based en
 \end{equation}
 
 $\mathit{D_c}=\xq{D}{1}{}{}{}$ quand toute la communauté est prise en compte ($c=1$).
-Les auteurs s'intéressent principalement à la courbe de $C_c$ en fonction de $c$ pour montrer \autocite{Castellani2016} que la contribution à la diversité totale des 40\% des composants les moints complexes de systèmes très divers (\og des galaxies au gènes \fg{}) atteint toujours au moins 60\%, ce résultat étant interprété comme une loi universelle de limitation de la complexité.
+Les auteurs s'intéressent principalement à la courbe de $C_c$ en fonction de $c$ pour montrer \autocite{Castellani2016} que la contribution à la diversité totale des 40\% des composants les moints complexes de systèmes très divers (``des galaxies au gènes '') atteint toujours au moins 60\%, ce résultat étant interprété comme une loi universelle de limitation de la complexité.
 
 Cette mesure peut être étendue à l'entropie HCDT sans difficulté:
 \begin{equation}
@@ -2326,7 +2326,7 @@ Une approche axiomatique a été développée par la littérature, revue par \te
 {\includegraphics[width=\maxwidth]{Tuomisto2012}}
 
 Un critère supplémentaire établi par \textcite{Smith1996}, complété par \textcite{Gosselin2001} est la compatibilité avec la courbe de \textcite{Lorenz1905}, construite en classant les espèces de la moins fréquente à la plus fréquente, et en traçant le cumul des fréquences en fonction du rang (Figure~\ref{Tuomisto2012}): une communauté parfaitement équitable est représentée par la bissectrice.
-La surface entre la courbe réelle et la bissectrice est très utilisée en économie pour mesurer l'inégalité sous le nom d'\og indice de Gini\fg{} \autocite{Gini1912, Ceriani2012}:
+La surface entre la courbe réelle et la bissectrice est très utilisée en économie pour mesurer l'inégalité sous le nom d'``indice de Gini'' \autocite{Gini1912, Ceriani2012}:
 
 \begin{itemize}
   \item  Compatibilité avec la courbe de Lorenz: l'équitabilité augmente pour une communauté si sa courbe de Lorenz est plus proche de la bissectrice. 
@@ -2428,7 +2428,7 @@ Cet indice n'est pas invariant par réplication mais est continu par rapport aux
 Une expression de l'équitabilité est souvent donnée à partir de l'indice de Shannon \autocite{Lloyd1964, Sheldon1969, Pielou1966a, Pielou1975}. 
 La valeur maximale de l'indice de Shannon est obtenue quand la distribution est parfaitement régulière. 
 Alors: $H_{\max}=\ln S$. 
-On a donc défini l'indice, souvent appelé \og indice de Pielou\fg{} :
+On a donc défini l'indice, souvent appelé ``indice de Pielou'' :
 
 \begin{equation}
   J = \frac{H}{H_{\max}} = \frac{H}{\ln S}.

@@ -82,7 +82,7 @@ La distribution de $\lambda$ retenue par Fisher est une loi gamma, ce qui impliq
 Le paramètre $p$ n'a pas d'interprétation utile à ce stade; $k$ est lié à la variance de la distribution: plus il est grand, plus les probabilités des espèces sont uniformes. 
 
 On notera que la distribution de ${\pi}_{n_s}$ n'est pas celle de $p_s$. 
-La courbe représentant $n_s$ en fonction de son rang n'est pas un vrai diagramme rang-abondance, mais un \og pseudo-RAC\fg{} \autocite{Izsak2012}.
+La courbe représentant $n_s$ en fonction de son rang n'est pas un vrai diagramme rang-abondance, mais un ``pseudo-RAC'' \autocite{Izsak2012}.
 
 En appliquant son modèle à des données, Fisher remarque que $k \to 0$, ce qui correspond à une distribution comprenant de nombreuses espèces de fréquences très variables, donc un pseudo-RAC décroissant rapidement, et retient cette propriété pour la suite de son raisonnement. 
 Dans ce cas, l'espérance du nombre d'espèces représentées par $\nu$ individus est, en posant $x=\nicefrac{p}{p+1}$ et $\alpha$ une constante:
@@ -243,7 +243,7 @@ Quelques méthodes sont pourtant applicables.
 On suppose que la communauté locale est de taille fixe et contient donc un nombre fixe d'espèces, et que leur découverte progressive aboutira à une asymptote de la SAC.
 
 \figureSC[t]{Gotelli2001}
-{Courbes d'accumulation et de raréfaction, obtenues par inventaires individuels ou groupés (\foreignlanguage{english}{\og \emph{samples}\fg{}}). 
+{Courbes d'accumulation et de raréfaction, obtenues par inventaires individuels ou groupés (\foreignlanguage{english}{``\emph{samples}''}). 
   Les courbes de raréfaction permettent de lisser les courbes d'accumulation. 
   Les courbes obtenues par inventaire groupé sont en général en dessous des courbes individuelles à cause de l'agrégation spatiale \autocite[][Fig.~1]{Gotelli2001}}
 {\includegraphics[width=\maxwidth]{Gotelli2001}}
@@ -283,7 +283,7 @@ La fonction \code{specaccum} de la librairie \emph{vegan} \autocite{Oksanen2012}
 }
 
 Pour une surface donnée, le nombre d'individus est une variable aléatoire.
-Dans ce cas, la SAC (dépendant de la surface) est différente de la courbe de raréfaction (fonction du nombre d'individus) de Gotelli et Colwell, que \textcite{Coleman1981} nomme \og courbe du collecteur \fg{}.
+Dans ce cas, la SAC (dépendant de la surface) est différente de la courbe de raréfaction (fonction du nombre d'individus) de Gotelli et Colwell, que \textcite{Coleman1981} nomme ``courbe du collecteur ''.
 
 La SAC théorique en fonction de la surface contient une incertitude concernant le nombre d'individus.
 Si la densité $\lambda_s$ (nombre d'individus par unité de surface) des espèces peut être connue (estimée en comptant les individus) ou si les probabilités $p_s$ sont issues d'un modèle (log-séries, log-normal...), le nombre d'individus observés de l'espèce $s$ suit une loi de Poisson d'espérance $A\hat{\lambda}_s$ ou, de façon équivalente \autocite[][pages 204-205]{Pielou1969}, $np_s$ (dans ce deuxième cas, $n$ est l'estimateur de $N$, la variable aléatoire correspondant à la taille de l'échantillon).
@@ -630,7 +630,7 @@ On notera que le nombre d'espèces est clairement fini dans ce cadre, mais que l
 La loi de puissance peut donc être bornée.
 Le glissement d'un modèle de biogéographie des îles à un cadre plus général est faisable simplement, à la manière de \textcite{Hubbell2001} pour la théorie neutre : chaque île peut être considérée comme une communauté locale issue d'une méta-communauté régionale.
 
-La distribution log-normale de Preston, dite \og canonique \fg{} assumait une relation particulière entre le nombre d'espèces et le nombre d'individus, pour laquelle \textcite{May1975} a montré que la valeur exacte de $z$ est 0,25.
+La distribution log-normale de Preston, dite ``canonique '' assumait une relation particulière entre le nombre d'espèces et le nombre d'individus, pour laquelle \textcite{May1975} a montré que la valeur exacte de $z$ est 0,25.
 Les résultats empiriques ultérieurs \autocite{May1975, May2000}, pour des lois quelconques, non canoniques, ont fourni des valeurs généralement comprises entre 0,2 et 0,3. 
 Une large méta-analyse \autocite{Drakare2006} à partir de 794 SAR d'origine très différentes fournit une moyenne de 0,27, comme la méta-analyse de la Figure~\ref{Williamson2001} \autocite{Williamson2001}, mais avec une certaine variabilité que les auteurs relient à l'échelle spatiale, au type d'organismes et aux habitats échantillonnés, mais aussi à la technique d'échantillonnage.
 
@@ -732,7 +732,7 @@ Gleason propose une relation dans laquelle le nombre d'espèces (et non son loga
 {\includegraphics[width=\maxwidth]{Coleman1982}}
 
 En concurrence au modèle de \textcite{Preston1962} prédisant une SAR en forme de loi de puissance, \textcite{Coleman1981, Coleman1982} proposent le modèle de placement aléatoire (\foreignlanguage{english}{\emph{random placement}}).
-L'idée sous-jacente est que certaines communautés ont une composition \og aléatoire \fg{}, c'est-à-dire issues d'un simple échantillonnage de la méta-communauté.
+L'idée sous-jacente est que certaines communautés ont une composition ``aléatoire '', c'est-à-dire issues d'un simple échantillonnage de la méta-communauté.
 Coleman ne prétend pas que la SAR des arbres de forêt tropicale suive son modèle, mais que ce soit le cas par exemple pour les oiseaux à une échelle spatiale limitée.
 
 Plusieurs îles (communautés locales) de taille relative  $p_i$ appartiennent à un ensemble (méta-communautés) dans lequel la distribution des espèces $\vectorsym{n}$, est considéré comme connue.
@@ -854,7 +854,7 @@ Elle peut être reliée à la distance entre les communautés pour définir une 
 
 \textcite{Chave2002} écrivent un modèle neutre de dispersion des espèces forestières, appliqué à l'échelle de l'Amazonie occidentale\autocite{Condit2002}. 
 Ils définissent dans ce cadre la fonction $F(r)$ égale à la probabilité que deux individus situés à distance $r$ l'un de l'autre soient de la même espèce, c'est-a-dire l'indice de concentration de Simpson (\ref{eq:SimpsonD}), page~\pageref{eq:SimpsonD}, appliqué à des paires d'individus distants. 
-$\beta_s(r)=1-F(r)$ est appelé \og indice de Simpson spatialement explicite\fg{} par \textcite{Shen2013}
+$\beta_s(r)=1-F(r)$ est appelé ``indice de Simpson spatialement explicite'' par \textcite{Shen2013}
 En pratique il est estimé à partir d'individus situés dans des parcelles distantes de $r$, l'ordre de grandeur de $r$ étant nettement plus grand que la taille des parcelles.
 
 De la même façon que l'indice de Simpson est généralisable à l'indice de Rao, $\beta_s(r)$ est généralisable à $\beta_{phy}(r)$, l'indice de Rao spatialement explicite, égal à la divergence moyenne entre deux individus situés à distance $r$.
@@ -907,7 +907,7 @@ La semi-variance de ce vecteur de composition spécifique est
 
 $\| \vectorsym{s_i}-\vectorsym{s_j} \|$ est la distance euclidienne entre les deux vecteurs.
 Puisque $\hat{\gamma}(r)$ est la somme des semi-variances spécifiques, c'est un estimateur de l'espérance du nombre d'espèces présentes sur une seule parcelle de chaque paire.
-Le variogramme de la composition spécifique est appelé \og variogramme de complémentarité \fg{} pour cette raison.
+Le variogramme de la composition spécifique est appelé ``variogramme de complémentarité '' pour cette raison.
 
 \textcite{Bacaro2007a} l'utilisent en tant que mesure de diversité $\beta$.
 

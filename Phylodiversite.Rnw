@@ -296,7 +296,7 @@ Après transformation de la matrice de distance en dendrogramme fonctionnel, év
 
 L'équitabilité fonctionnelle, ou régularité \autocite{Pavoine2011}, rend compte de l'homogénéité de l'occupation des niches. 
 
-L'indice d'équitabilité de \textcite{Mouillot2005a}, que les auteurs nomment \og indice de régularité fonctionnelle\fg{}, est inspiré de l'indice d'équitabilité de Bulla (page~\pageref{eq:Bulla}).
+L'indice d'équitabilité de \textcite{Mouillot2005a}, que les auteurs nomment ``indice de régularité fonctionnelle'', est inspiré de l'indice d'équitabilité de Bulla (page~\pageref{eq:Bulla}).
 C'est un indice unidimensionnel: un seul trait est pris en compte.
 Les espèces sont classées par valeur croissante du trait.
 L'équitabilité maximale est obtenue si l'écart entre deux valeurs de traits est proportionnel aux abondances cumulées des deux espèces.
@@ -761,7 +761,7 @@ L'indice de Rao est une mesure de divergence pondérée. Son utilisation s'est l
 
 \`A partir de relevés fournissant la fréquence de chaque espèce par communauté et d'une matrice de dissimilarité entre paires d'espèces, l'indice de \textcite{Rao1982} donne la dissimilarité moyenne entre deux individus choisis au hasard.
 
-L'indice de Rao est souvent appelé \og entropie quadratique\fg{} en raison de sa forme mathématique.
+L'indice de Rao est souvent appelé ``entropie quadratique'' en raison de sa forme mathématique.
 
 \subsection{Formalisation}
 
@@ -1518,7 +1518,7 @@ Dqz(Paracou618.MC$Ns, q=1, Z)
 }
 {\includegraphics[width=\maxwidth]{ArbreA}}
 
-La diversité phylogénétique $\xq{\bar{D}}{q}{}{}{}(T)$ appliquée à un arbre ultramétrique est un cas particulier de $\xq{D}{q}{\matrixsym{Z}}{}{}$ pour une matrice $\matrixsym{Z}$ dont les lignes et colonnes sont la similarité des \og espèces historiques\fg{}, c'est-à-dire les couples (espèce actuelle; branche ancestrale)\autocite[][proposition A7]{Leinster2012}.
+La diversité phylogénétique $\xq{\bar{D}}{q}{}{}{}(T)$ appliquée à un arbre ultramétrique est un cas particulier de $\xq{D}{q}{\matrixsym{Z}}{}{}$ pour une matrice $\matrixsym{Z}$ dont les lignes et colonnes sont la similarité des ``espèces historiques'', c'est-à-dire les couples (espèce actuelle; branche ancestrale)\autocite[][proposition A7]{Leinster2012}.
 
 \figureFW{MatricePhylo}
 {
@@ -1641,12 +1641,12 @@ Pour mesurer la diversité neutre, les espèces sont placées dans un espace mul
 
 La matrice de similarité entre les espèces $\matrixsym{Z}$ permet d'affiner la représentation. Soit la matrice $\matrixsym{C}=\sqrt{\matrixsym{Z}}$.
 Chaque espèce $s$ est maintenant représentée par le vecteur dont la coordonnée sur l'axe $t$ est $\sqrt{p_s p_t}c_{s,t}$. 
-Les axes correspondent aux espèces \og pures\fg{}, totalement dissimilaires, les vecteurs des espèces réelles prennent en compte la similarité. 
+Les axes correspondent aux espèces ``pures'', totalement dissimilaires, les vecteurs des espèces réelles prennent en compte la similarité. 
 Dans le cas extrême de la diversité neutre, $\matrixsym{C}=\matrixsym{I}$, chaque espèce est située uniquement sur son axe. 
 Dans l'autre cas extrême de totale similarité, où $\matrixsym{C}$ ne contient que des 1, toutes les espèces sont colinéaires.
 
 Il est possible de calculer les $S$ valeurs propres notées $\lambda_s$ de la matrice des coordonnées des espèces et de les normaliser : $\mu_s=\nicefrac{\lambda_s}{\sum_s{\lambda_s}}$.
-La communauté peut maintenant être représentée par ses valeurs propres $\mu_s$ correspondant à la proportion d'une \og espèce composite\fg{} pure sur chaque axe généré par les vecteurs propres: cette transformation est une ACP non centrée, non réduite.
+La communauté peut maintenant être représentée par ses valeurs propres $\mu_s$ correspondant à la proportion d'une ``espèce composite'' pure sur chaque axe généré par les vecteurs propres: cette transformation est une ACP non centrée, non réduite.
 La diversité HCDT des valeurs propres est la diversité de la communauté, qui sera notée ici $\xq{D}{q}{\matrixsym{Z}}{}{}(\Lambda)$.
 
 La définition de cette diversité autorise toute matrice $\matrixsym{C}$ symétrique, dont les valeurs de similarité sont positives ou nulles, strictement positives sur la diagonale.
