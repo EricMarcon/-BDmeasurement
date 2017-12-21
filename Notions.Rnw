@@ -11,7 +11,7 @@ par(mar=c(0,0,0,0))
 
 \LargeMargins
 \selectlanguage{english}
-\sisetup{locale = EN}
+\sisetup{locale = UK}
 \chapter{Notions de Diversité}
 
 \lettrine{L}{e terme} \foreignlanguage{english}{\emph{biodiversity}} est attribué \autocite{Meine2006} à Walter Rosen, un membre du \emph{National Research Council} américain, qui a commencé à contracter les termes \foreignlanguage{english}{\emph{biological diversity}} pendant la préparation d'un colloque dont les actes seront publiés sous le titre \foreignlanguage{english}{\og Biodiversity\fg{}} \autocite{Wilson1988}.

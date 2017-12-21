@@ -24,7 +24,7 @@
 
 %%% BIBLIOGRAPHY FILE
 %%%------------------------------------------------------------------------------
-\addbibresource{library.bib}
+\addbibresource{../library.bib}
  
 %%% THE DOCUMENT
 %%%-------------------------------------------------------------------------------
@@ -53,7 +53,7 @@ par(mar=c(0,0,0,0))
 
 
 \selectlanguage{english}
-\sisetup{locale = EN}
+\sisetup{locale = UK}
 
 %%%------------------------------------------------------------------------------
 \frontmatter

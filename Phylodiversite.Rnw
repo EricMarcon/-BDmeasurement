@@ -13,7 +13,7 @@ data(Paracou618)
 
 \LargeMargins
 \selectlanguage{english}
-\sisetup{locale = EN}
+\sisetup{locale = UK}
 \chapter{Cadre}
 
 \begin{Essentiel}
