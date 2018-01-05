@@ -31,8 +31,9 @@
 *.out
 *.toc
 *-concordance.tex
-*-eps-converted-to.pdf
 
 # Intermediate files
 *.tex
 .Rproj.user
+*.pdf
+*.R
