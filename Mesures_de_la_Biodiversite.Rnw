@@ -18,7 +18,7 @@
   {#1^{#3}_{#6}\!#2^{#4}_{#5}}
 }
 \newenvironment{Essentiel}
-  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{L'essentiel}}
+  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{Gist}}
   {\end{bclogo}}
 
 
@@ -31,7 +31,7 @@
 
 \author{Eric Marcon}
 \title{The Measurement of Biodiversity}
-\date{21 December 2017}
+\date{February, 3 2017}
 
 
 %%%------------------------------------------------------------------------------
@@ -71,6 +71,7 @@ This document is reproducibly and dynamically made with:
   \item \emph{knitr} (\url{http://yihui.name/knitr/}).
 \end{itemize}
 
+The original English translation was made by Tim Chubb.
 ]
 
 \SmallMargins
@@ -95,57 +96,57 @@ This document is reproducibly and dynamically made with:
 
 
 
-\SmallMargins
-\part{Neutral Diversity of a Community}
-\label{part:Neutre}
-<<child-Neutre, child='Neutre.Rnw'>>=
-@
-\clearpage
-
-
-
-\SmallMargins
-\part{Functional and Phylogenetic Diversity}
-\label{part:Phylodiversite}
-<<child-Phylodiversite, child='Phylodiversite.Rnw'>>=
-@
-\clearpage
-
-
-
-\SmallMargins
-\part[Beta Diversity and Partitioning]{$\beta$ Diversity and Partitioning}
-\label{part:Beta}
-<<child-Beta, child='Beta.Rnw'>>=
-@
-\clearpage
-
-
-
-\SmallMargins
-\part{Joint Diversity, Structural Diversity}
-\label{part:Jointe}
-<<child-Jointe, child='Jointe.Rnw'>>=
-@
-\clearpage
-
-
-
-\SmallMargins
-\part{Spatially Explicit Diversity}
-\label{part:Spatial}
-<<child-Spatial, child='Spatial.Rnw'>>=
-@
-\clearpage
-
-
-
-\SmallMargins
-\part{Conclusion}
-\label{part:Conclusion}
-<<child-Conclusion, child='Conclusion.Rnw'>>=
-@
-\clearpage
+% \SmallMargins
+% \part{Neutral Diversity of a Community}
+% \label{part:Neutre}
+% <<child-Neutre, child='Neutre.Rnw'>>=
+% @
+% \clearpage
+% 
+% 
+% 
+% \SmallMargins
+% \part{Functional and Phylogenetic Diversity}
+% \label{part:Phylodiversite}
+% <<child-Phylodiversite, child='Phylodiversite.Rnw'>>=
+% @
+% \clearpage
+% 
+% 
+% 
+% \SmallMargins
+% \part[Beta Diversity and Partitioning]{$\beta$ Diversity and Partitioning}
+% \label{part:Beta}
+% <<child-Beta, child='Beta.Rnw'>>=
+% @
+% \clearpage
+% 
+% 
+% 
+% \SmallMargins
+% \part{Joint Diversity, Structural Diversity}
+% \label{part:Jointe}
+% <<child-Jointe, child='Jointe.Rnw'>>=
+% @
+% \clearpage
+% 
+% 
+% 
+% \SmallMargins
+% \part{Spatially Explicit Diversity}
+% \label{part:Spatial}
+% <<child-Spatial, child='Spatial.Rnw'>>=
+% @
+% \clearpage
+% 
+% 
+% 
+% \SmallMargins
+% \part{Conclusion}
+% \label{part:Conclusion}
+% <<child-Conclusion, child='Conclusion.Rnw'>>=
+% @
+% \clearpage
 
 
 
