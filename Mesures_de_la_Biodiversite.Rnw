@@ -81,8 +81,8 @@ The original English translation was made by Tim Chubb.
 
 \clearpage
 
-<<child-Notations, child='Notations.Rnw'>>=
-@
+% <<child-Notations, child='Notations.Rnw'>>=
+% @
 
 %%%------------------------------------------------------------------------------
 \mainmatter

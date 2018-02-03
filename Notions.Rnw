@@ -191,7 +191,7 @@ The phylogenetic approach (page~\pageref{chap:Phyloentropie}) may get around the
 
 \chapter{Tools}
 
-\begin{Gist}
+\begin{Essentiel}
   Diversity can be described locally by an accumulation curve (SAC) that represents the number of species sampled as a function of effort.
   At a larger scale, this curve is called the species-area relationship (SAR).
   
@@ -200,7 +200,7 @@ The phylogenetic approach (page~\pageref{chap:Phyloentropie}) may get around the
   The coverage rate is the sum of the probabilities of the species observed given the sampling effort.
   It can be estimated accurately from inventory data.
   Completeness is the proportion (in number) of species observed.
-\end{Gist}
+\end{Essentiel}
 
 \lettrine{S}{ome} tools are necessary before getting to the heart of the subject. 
 Relationships describing the number of species based on sample size (species-area relationships) and species abundance distribution are important for ecologists. 
