@@ -1,4 +1,5 @@
 # The Measurement of Biodiversity
+
 ![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg)
 
 Synthesis book about the the measurement of biodiversity
