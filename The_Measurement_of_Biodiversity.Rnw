@@ -64,6 +64,8 @@ I thank François Morneau for his careful proof reading of the first version of 
 
 Bruno Hérault and Chris Baraloto contributed significantly to the review of the literature.
 
+The original English translation was made by Tim Chubb.
+
 This document is reproducibly and dynamically made with:
 \begin{itemize}
   \item \LaTeX, in its Miktex (\url{http://miktex.org/}) distibution anf the \emph{memoir} class(\url{http://www.ctan.org/pkg/memoir});
@@ -71,7 +73,7 @@ This document is reproducibly and dynamically made with:
   \item \emph{knitr} (\url{http://yihui.name/knitr/}).
 \end{itemize}
 
-The original English translation was made by Tim Chubb.
+Its source code is published on GitHub (\url{https://github.com/EricMarcon/BDMeasurement}).
 ]
 
 \SmallMargins
