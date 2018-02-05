@@ -241,7 +241,8 @@ There are several ways to account for this relationship \autocite{Scheiner2003},
   \item In the strictest sense of the term SAR, each point represents a community. 
   The issue is the relationship between the number of species and the size of each community;
   \item If the points represent a different sampling effort for each community, this is defined as a species accumulation curve (SAC). 
-  A rarefaction curve can be calculated, using statistical tools, by reducing the sampling effort in order to obtain a theoretical SAC which is not affected by the order of taking into account the data.
+  A rarefaction curve can be calculated by reducing the sampling effort using statistical tools.
+  This provides a theoretical SAC which is not affected by the order of the data.
 \end{itemize}
 
 The Figure~\ref{SARFig}
