@@ -1,15 +1,14 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = en_GB
 <<Notions-parent, echo=FALSE, cache=FALSE>>=
-library("knitr")
-set_parent('The_Measurement_of_Biodiversity.Rnw')
+knitr::set_parent('The_Measurement_of_Biodiversity.Rnw')
 # knitr and document format options
-opts_knit$set(concordance=TRUE)
+knitr::opts_knit$set(concordance=TRUE)
 # Set global chunk options
-opts_chunk$set(cache=TRUE, warning=FALSE, tidy=TRUE, fig.width=8, fig.height=6, out.width='.8\\maxwidth', tidy.opts=list(blank=FALSE, width.cutoff=60), size="scriptsize")
+knitr::opts_chunk$set(cache=TRUE, warning=FALSE, tidy=TRUE, fig.width=8, fig.height=6, out.width='.8\\maxwidth', tidy.opts=list(blank=FALSE, width.cutoff=60), size="scriptsize")
 options(width=60)
 # Postscript plots
-setEPS(horizontal=FALSE, onefile=FALSE, paper="special", family="ComputerModern", encoding="TeXtext.enc", width=8.0, height=6.0)
+grDevices::setEPS(horizontal=FALSE, onefile=FALSE, paper="special", family="ComputerModern", encoding="TeXtext.enc", width=8.0, height=6.0)
 par(mar=c(0,0,0,0))
 # ggplot style
 library("ggplot2")
@@ -223,12 +222,12 @@ A glossary is provided in the preface, and will be referred to here where necess
 Calculations were made in R \autocite{R}, mostly using the package \emph{entropart} \autocite{Marcon2014c}. 
 All the code used can be downloaded \footnote{\url{http://www.ecofog.gf/spip.php?article427}} in addition to updates of this document.
 
-Much of the data used here come from the permanent forestry plot of Barro Colorado Island (BCI)\autocite{Condit2012}: \SI{50}{\hectare} of tropical forest for which there is an inventory of all trees of more than \SI{1}{\centi\meter} diameter at breast height (DBH).
-Examples in the text using these data employ a reduced dataset of trees of more than \SI{10}{\centi\meter} available in the package \emph{vegan} \autocite{Oksanen2012}.
-Some other examples use the inventories of the Paracou research station, located in the tropical forest of French Guiana \autocite{Gourlet-Fleury2004}.
-Data comes principally from two one-hectare plots at the site, numbers 6 and 18.
-This data, again of trees of more than \SI{10}{\centi\meter} DBH, is available in the package \emph{entropart}.
+Much of the data used here come from the inventories of the Paracou research station, located in the tropical forest of French Guiana \autocite{Gourlet-Fleury2004}.
+Data comes principally from the \SI{6.25}{\hectare}-plot number 6, where all trees of more than \SI{10}{\centi\meter} diameter at breast height (DBH) have been inventoried in 2016.
+Data is available in the package \emph{SpatDiv}, including the position of the trees, thier species and their basal area.
 
+Some other examples use the permanent forestry plot of Barro Colorado Island (BCI)\autocite{Condit2012}: \SI{50}{\hectare} of tropical forest for which there is an inventory of all trees of more than \SI{1}{\centi\meter} DBH.
+Examples in the text using these data employ a reduced dataset of trees of more than \SI{10}{\centi\meter} available in the package \emph{vegan} \autocite{Oksanen2012}.
 
 
 \section{SAD and SAR} 
@@ -294,7 +293,7 @@ Species are not identified individually, but by the number of individuals they h
   N <- sum(Ns)
   SADhist <- ggplot(data.frame(Ns), aes(log(Ns))) + 
     geom_histogram(bins=nclass.Sturges(log(Ns)), 
-                   color="black", fill="white") +
+                   color="black", fill="white", boundary = 0) +
     labs(y="Number of Species")
   SADhist + ggstyle
   @
@@ -414,10 +413,19 @@ So:
 
 In the package \emph{entropart}, the \code{Coverage} function calculates three estimators (that of Zhang and Huang by default):
 
-<<Coverage>>=
-data(Paracou618)
-Coverage(Paracou618.MC$Ns)
+<<CoverageBCI>>=
+library("entropart")
+Coverage(Ns)
 @
+
+The sample coverage of BCI is close to 1 because the plot is very large (\SI{50}{\hectare}).
+In the \SI{6.25}{\hectare} of Paracou plot 6, it is lower:
+
+<<CoverageP6>>=
+library("SpatDiv")
+Coverage(Paracou6)
+@
+
 
 
 \textcite{Chao2012b} shows that the slope of the accumulation curve giving the expectation of the number of species as a function of the number of individuals (rarefaction curve in Figure~\ref{Gotelli2001}) is equal to the coverage deficit,
@@ -438,14 +446,25 @@ For populations of finite size, see \textcite{Chao2012} and \textcite{Hwang2014}
 The completeness of a sampling effort is the proportion of the number of observed species: $\xq{s}{}{n}{\ne 0}{}/{S}$.
 It is only a count of the number of species and must not be confused with coverage, which is the sum of their probabilities: the completeness rate is always much lower than the coverage rate because those species which are not sampled are the rarest.
 
-The completeness of the sampling effort of tropical forest trees in the example just mentioned can be estimated by dividing the number of species observed by the the estimated number of species (see page~\ref{sec:Richesse}):
+The completeness of the sampling effort of tropical forest trees in the examples just mentioned can be estimated by dividing the number of species observed by the the estimated number of species (see page~\ref{sec:Richesse}).
+At BCI: 
 
-<<Completeness>>=
+<<CompletenessBCI>>=
 # Species observed
-(Obs <- Richness(Paracou618.MC$Ps))
+(Obs <- Richness(Ns, Correction = "None"))
 # Estimated richness
-(Est <- Richness(Paracou618.MC$Ns, Correction = "Jackknife"))
+(Est <- Richness(Ns, Correction = "Jackknife"))
 # Completeness
 as.numeric(Obs/Est)
 @
 
+At Paracou:
+
+<<CompletenessP6>>=
+# Species observed
+(Obs <- Richness(Paracou6, Correction = "None"))
+# Estimated richness
+(Est <- Richness(Paracou6, Correction = "Jackknife"))
+# Completeness
+as.numeric(Obs/Est)
+@
