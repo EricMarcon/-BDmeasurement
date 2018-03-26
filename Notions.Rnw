@@ -423,12 +423,11 @@ In the \SI{6.25}{\hectare} of Paracou plot 6, it is lower:
 
 <<CoverageP6>>=
 library("SpatDiv")
-Coverage(Paracou6)
+Coverage(as.AbdVector(Paracou6))
 @
 
 
-
-\textcite{Chao2012b} shows that the slope of the accumulation curve giving the expectation of the number of species as a function of the number of individuals (rarefaction curve in Figure~\ref{Gotelli2001}) is equal to the coverage deficit,
+\textcite{Chao2012b} show that the slope of the accumulation curve giving the expectation of the number of species as a function of the number of individuals (rarefaction curve in Figure~\ref{Gotelli2001}) is equal to the coverage deficit,
 
 \begin{equation}
   1-{\mathbb E}\left(\xq{C}{}{n}{}{}\right)={\mathbb E}\left(\xq{S}{}{n+1}{}{}\right)-{\mathbb E}\left(\xq{S}{}{n}{}{}\right),
