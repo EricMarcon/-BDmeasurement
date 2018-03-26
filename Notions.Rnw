@@ -1,12 +1,19 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = en_GB
 <<Notions-parent, echo=FALSE, cache=FALSE>>=
-set_parent('Mesures_de_la_Biodiversite.Rnw')
+library("knitr")
+set_parent('The_Measurement_of_Biodiversity.Rnw')
+# knitr and document format options
+opts_knit$set(concordance=TRUE)
+# Set global chunk options
 opts_chunk$set(cache=TRUE, warning=FALSE, tidy=TRUE, fig.width=8, fig.height=6, out.width='.8\\maxwidth', tidy.opts=list(blank=FALSE, width.cutoff=60), size="scriptsize")
 options(width=60)
-# Graphiques postscript
+# Postscript plots
 setEPS(horizontal=FALSE, onefile=FALSE, paper="special", family="ComputerModern", encoding="TeXtext.enc", width=8.0, height=6.0)
 par(mar=c(0,0,0,0))
+# ggplot style
+library("ggplot2")
+ggstyle <- list(scale_colour_grey(), theme_bw(), theme(legend.position="none"))
 @
 
 \LargeMargins
@@ -252,7 +259,10 @@ The Figure~\ref{SARFig}
   data(BCI)
   Cumul <- apply(BCI, 2, cumsum)
   Richesse <- apply(Cumul, 1, function(x) sum(x>0))
-  plot(y=c(0, Richesse), x=0:50, type="l", xlab="Surface (ha)")
+  SARplot <- ggplot(data.frame(A=0:50, S=c(0, Richesse)), aes(A, S)) +
+    geom_line() +
+    labs(x="Surface (ha)")
+  SARplot + ggstyle
   @
 } shows species accumulation for BCI data.
 A SAC can be plotted against the area, the number of individuals, or the number of sample plots, as needed.
@@ -282,12 +292,15 @@ Species are not identified individually, but by the number of individuals they h
   data(BCI)
   Ns <- sort(colSums(BCI), decr = TRUE)
   N <- sum(Ns)
-  hist(log(Ns), main = NULL , xlab = expression(ln(N[s])), 
-  ylab="Nb Espèces")
+  SADhist <- ggplot(data.frame(Ns), aes(log(Ns))) + 
+    geom_histogram(bins=nclass.Sturges(log(Ns)), 
+                   color="black", fill="white") +
+    labs(y="Number of Species")
+  SADhist + ggstyle
   @
   <<RACCode, eval=FALSE, tidy=FALSE>>=
   library("entropart")
-  plot(as.AbdVector(Ns), Distribution = "lnorm")
+  autoplot(as.AbdVector(Ns), Distribution = "lnorm") + ggstyle
   @
 }). 
 It can be represented as a frequency histogram (\textcite{Preston1948} plot, above) or as a rank-abundance curve (RAC or \textcite{Whittaker1965} plot, below). 
